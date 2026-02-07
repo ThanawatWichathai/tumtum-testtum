@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+    int n;
+    int count = 0;
+
+    if (scanf("%d", &n) != 1) {
+        return 1;
+    }
+
+    if (n > 0) {
+        while (count < n) {
+            printf("Hello Loop!\n");
+            count++;
+        }
+    } else {
+        printf("Error\n");
+    }
+
+    return 0;
+}
